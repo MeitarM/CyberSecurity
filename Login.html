@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>INI Admin Page </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body class="img js-fullheight" style="background-image: url(admin1.jpg);">
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 text-center mb-7"><br><br><br><br><br><br>
+<h2 class="heading-section"><body><strong><p style="color:crimson;">Admin Login</p></strong></body></h2>
+				<body>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+			
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap p-0">
+		      	<h3 class="mb-4 text-center"><body><em><strong><p style="color:gold;">Enter Credentials</p></em></strong></body></h3>
+		      	<form id="form" action="post" class="signin-form">
+		      		<form action="/action_page.php" method="post">
+					<form id="form" action="post">
+		      		<div class="form-group">
+		      		
+	<input type="Username" id="Username" class="form-control" placeholder="Enter Username" aria-describedby="UsernameHelp" >
+		      		</div>
+		      		
+	<div class="form-group">
+	<input type="Password" placeholder="Enter Password" id="Password" class="form-control" >
+	<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+	            </div>	
+
+	            
+	            <div class="form-group">
+	            	<button type="Login" 
+	            	class="form-control btn btn-primary submit px-3"
+	            	onClick="auth(event)">Sign In</button>
+	            </div>
+	         </form>  
+<script>
+    function auth(event) {
+          event.preventDefault();
+
+          var Username = document.getElementById("Username").value;
+          var Password = document.getElementById("Password").value;
+
+          if (Username === "sarahini" && Password === "0535208870") {
+               window.location.replace("Database.php");
+          } else {
+              alert("Invalid information");
+              return;
+          }
+    }
+</script> 
+	            <div class="form-group d-md-flex">
+	            	<div class="w-50">
+		            	<label class="checkbox-wrap checkbox-primary">Remember Me
+									  <input type="checkbox" checked>
+									  <span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="w-50 text-md-right">
+									<a href="#" style="color: #fff">Forgot Password</a>
+								</div>
+	            </div>
+	          </form>
+
+	</body>
+</html>
+
